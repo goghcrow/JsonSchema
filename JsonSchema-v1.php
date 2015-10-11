@@ -134,7 +134,7 @@ class JsonSchema {
 				break;
 			case self::ARRAY:
 				foreach($value as $item) {
-					$schema["item"][] = self::encode($item);
+					$schema["items"][] = self::encode($item);
 				}
 				break;
 			case self::NULL:
